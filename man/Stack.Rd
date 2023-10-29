@@ -4,9 +4,17 @@
 \alias{Stack}
 \title{Stack}
 \description{
-Stack
+Create a stack.
+}
+\examples{
+s <- Stack$new()
+s$push(1)
+s$push(2)
+s$read()
 
-Stack
+(s$pop())
+s$read()
+
 }
 \section{Methods}{
 \subsection{Public methods}{

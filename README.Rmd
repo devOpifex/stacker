@@ -43,7 +43,7 @@ s$push(3)
 
 s$read()
 
-s$pop()
+(s$pop())
 
 s$top()
 s$read()

@@ -1,4 +1,16 @@
 #' Stack
+#' 
+#' Create a stack.
+#' 
+#' @examples
+#' s <- Stack$new()
+#' s$push(1)
+#' s$push(2)
+#' s$read()
+#' 
+#' (s$pop())
+#' s$read()
+#' 
 #' @export
 Stack <- R6::R6Class(
   "Stack",
