@@ -1,0 +1,51 @@
+---
+output: 
+  github_document:
+    html_preview: false
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+# stacker
+
+A simple stack for R
+
+
+``` r
+# install.packages("remotes")
+remotes::install_github("devOpifex/stacker")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(stacker)
+
+s <- Stack$new()
+
+s$push(1)
+s$push(2)
+s$push(3)
+
+s$read()
+
+s$pop()
+
+s$top()
+s$read()
+```
+
