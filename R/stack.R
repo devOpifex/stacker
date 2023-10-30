@@ -48,7 +48,7 @@ Stack <- R6::R6Class(
         return()
       }
 
-      private$stack[[1L]]
+      private$stack[[self$size()]]
     },
     #' @details Last item on the stack
     bottom = function() {
