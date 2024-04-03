@@ -42,22 +42,6 @@ Stack <- R6::R6Class(
     size = function() {
       length(private$stack)
     },
-    #' @details First item on the stack
-    top = function() {
-      if (self$size() == 0L) {
-        return()
-      }
-
-      private$stack[[self$size()]]
-    },
-    #' @details Last item on the stack
-    bottom = function() {
-      if (self$size() == 0L) {
-        return()
-      }
-
-      private$stack[[self$size()]]
-    },
     #' @details Read the stack
     read = function() {
       private$stack
